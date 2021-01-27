@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  padding: 1.5em;
+  
+  margin-top: 5px;
+  max-width: 250px;
+  text-align: center;
+  
+}
+
+.input-text {
+  padding: 1.5em;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: auto;
+}
+
+button {
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 1em;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+ul{
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid cornflowerblue;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: baseline;
+  max-width: 250px;
+  margin: auto;
+  
+}
+
+.input-check {
+  padding: 1.5em;
+  text-align: center;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+h1{
+  color: cornflowerblue;
+}
