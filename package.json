@@ -8,7 +8,7 @@
     "start-watch": "nodemon index.js",
     "dev": "concurrently \"yarn run start-watch\" \"cd client && yarn start\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && run dev"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run dev"
   },
   "engines": {
     "node": "14.15.4"
