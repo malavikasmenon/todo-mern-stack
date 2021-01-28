@@ -8,12 +8,11 @@ require('dotenv').config();
 
 const app = express();
 
-const db_connect = "mongodb+srv://malavikasmenon:Malavika29*@cluster0.5qy81.mongodb.net/todoDB?retryWrites=true&w=majority";
 
 const port = process.env.PORT || 5000;
 
 //connect to the database
-mongoose.connect(db_connect, {useNewUrlParser: true})
+mongoose.connect(process.env.DB, {useNewUrlParser: true})
     .then(() => console.log("Database connected successfully"))
     .catch((err) => console.log(err));
 
