@@ -19,6 +19,8 @@ mongoose.connect(db_connect, {useNewUrlParser: true})
 
 mongoose.Promise = global.Promise;
 
+app.use(express.static(path.join(__dirname, "client", "build")))
+
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -35,5 +37,8 @@ app.use((err,req,res,next)=>{
     next();
 })
 
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen(port, ()=> console.log(`Server is running on port ${port}`));
